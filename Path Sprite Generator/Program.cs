@@ -15,7 +15,7 @@ namespace Path_Sprite_Generator
         {
 
 
-            StreamWriter Converter = new StreamWriter("Converted.txt");
+            StreamWriter Converter = new StreamWriter("Converted.txt");//
 
             string TypeConverted = "Sprite";
             string PubStatReadonly = $@"public static readonly {TypeConverted}";

@@ -7,7 +7,7 @@ using  System.IO;
 
 namespace Net_Project_Game
 {
-    //2_of_clubs.png
+    //2_of_clubs.pnga
    public enum Suits
     {
         hearts,
