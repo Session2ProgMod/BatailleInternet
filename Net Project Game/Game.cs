@@ -40,17 +40,19 @@ namespace Net_Project_Game
 
         private static void TopCardVS(List<Cards> P1, List<Cards> P2, List<Cards> D1, List<Cards> D2)
         {
-            if (P1[0].CardValue > P2[0].CardValue)
+
+           // basic game for test purposes // set project to console in meanwhile
+            if (P1[0].CardValue > P2[0].CardValue) // top vs top P1 wins
             {
 
-                D1.Add(P2[0]);
-                P2.Remove(P2[0]);
+                D1.Add(P2[0]);   //add to discard 1 P2 1st card
+                P2.Remove(P2[0]); //remove the moved one
 
-                D1.Add(P1[0]);
-                P1.Remove(P1[0]);
+                D1.Add(P1[0]);  // add his own to his discard
+                P1.Remove(P1[0]); // remove mvode
 
             }
-            else if (P1[0].CardValue < P2[0].CardValue)
+            else if (P1[0].CardValue < P2[0].CardValue) // p2 win
             {
                 D2.Add(P1[0]);
                 D2.Add(P2[0]);
